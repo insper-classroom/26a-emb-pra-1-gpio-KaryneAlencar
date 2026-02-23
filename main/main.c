@@ -56,7 +56,7 @@ int main() {
         if (!gpio_get(BUTTON_PIN)) {
             gpio_put(LED_PIN, 1);
             motor_360();
-            sleep_ms(3500);
+            sleep_ms(500);
             gpio_put(LED_PIN, 0);
         }
         sleep_ms(10);
